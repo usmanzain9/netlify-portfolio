@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: usmanzain9/usmanzain9.github.io
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: portfolio
+    label: Portfolio
+    folder: portfolio
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: thumbnail, label: Image, widget: image }
+      - { name: body, label: Body, widget: markdown }
+      - { name: tags, label: Tags }
+      - { name: live, label: Live Site Link, widget: string }
+      - { name: open, label: Github Link, widget: string, required: false }
